@@ -1,0 +1,27 @@
+// global style
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// variables
+@import "./partials/variables";
+
+// desktop
+@import "./partials/desktop/navigation.scss";
+@import "./partials/desktop/home.scss";
+@import "./partials/desktop/about.scss";
+@import "./partials/desktop/portfolio.scss";
+
+// tablet
+@import "./partials/tablet/tabletNavigation.scss";
+@import "./partials/tablet/tabletHome.scss";
+@import "./partials/tablet/tabletAbout.scss";
+@import "./partials/tablet/tabletPortfolio.scss";
+
+// mobile
+@import "./partials/mobile/mobileNavigation.scss";
+@import "./partials/mobile/mobileHome.scss";
+@import "./partials/mobile/mobileAbout.scss";
+@import "./partials/mobile/mobilePortfolio.scss";

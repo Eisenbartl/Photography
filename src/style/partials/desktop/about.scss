@@ -1,0 +1,21 @@
+@media screen and (min-width: 1366px) {
+  .about {
+    background: $ColorFour;
+    display: flex;
+    height: 100vh;
+    justify-content: space-evenly;
+    opacity: 0.5;
+    padding: 300px 10vw 0 10vw;
+
+    // img {
+    //     height: 400px;
+    // }
+
+    .about-words {
+      font-family: $SecondaryFont;
+      font-size: 15pt;
+      line-height: 34px;
+      width: 500px;
+    }
+  }
+}

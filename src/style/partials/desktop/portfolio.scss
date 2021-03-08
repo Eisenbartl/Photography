@@ -1,0 +1,41 @@
+@media screen and (min-width: 1366px) {
+    .portfolio {
+        padding: 300px 10vw 0 10vw;
+
+        // local style settings
+        img {
+            height: 300px;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            font-family: $SecondaryFont;
+            font-size: 37pt;
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
+
+        .img-section {
+            margin-bottom: 100px;
+        }
+        
+        .img-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .weddings {
+
+            .wedding-img {
+                
+            }
+            
+        }
+
+        .family {
+            .family-img {
+            }
+        }
+    }
+}

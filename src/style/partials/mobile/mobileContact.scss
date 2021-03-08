@@ -1,0 +1,139 @@
+@media screen and (max-width: 767px) {
+    .contact {
+        // animation-duration: 5s;
+        // animation-name: slide;
+        align-items: center;
+        animation: animate 1s linear reverse;
+        display: flex;
+        height: 100vh;
+        justify-content: flex-end;
+        left: 0;
+        place-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+        
+        // .form-overlay {
+            //     background: #333;
+            //     height: 100vh;
+            //     opacity: .75;
+            //     position: absolute;
+            //     width: 100vw;
+            // }
+            
+            form {
+            animation-duration: 1s;
+            animation-name: slide;
+            background: #fff;
+            // background: #f3f3f3;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: space-between;
+            padding: 150px 5vw 0 5vw;
+            width: 100vw;
+            z-index: 3;
+
+            .form-content {
+                display: flex;
+                flex-direction: column;
+                .name-email-input {
+                    display: flex;
+                    justify-content: space-between;
+
+                    input {
+                        border: none;
+                        border-bottom: 1px solid #000;
+                        font-size: 6vw;
+                        font-family: $SecondaryFont;
+                        height: 30px;
+                        margin: 0 10px 20px 0;
+                        outline: none;
+                        padding: 0 .5rem;
+                        width: 40%;
+                    }
+                }
+
+                input {
+                    border: none;
+                    border-bottom: 1px solid #000;
+                    font-size: 6vw;
+                    font-family: $SecondaryFont;
+                    height: 30px;
+                    padding: 0 .5rem;
+                    margin: 0 10px 20px 0;
+                    outline: none;
+                }
+
+                textarea {
+                    border: 1px solid #000;
+                    font-family: $SecondaryFont;
+                    font-size: 6vw;
+                    height: 300px;
+                    margin-bottom: 20px;
+                    padding: .5rem;
+                    resize: none;
+                }
+    
+                button {
+                    background: #fff;
+                    border: 2px solid black;
+                    font-family: $SecondaryFont;
+                    font-size: 30px;
+                    font-weight: normal;
+                    height: 60px;
+                    outline: none;
+                    width: 90vw;
+                }
+
+            }
+
+            .close-contact {
+                background: #fff;
+                border: 2px solid #000;
+                border-radius: 50px;
+                bottom: 30px;
+                display: grid;
+                height: 70px;
+                position: absolute;
+                place-items: center;
+                right: 30px;
+                // right: 10vw;
+                width: 70px;
+
+                p {
+                    font-family: $SecondaryFont;
+                    font-size: 22pt;
+                }
+            }
+
+            .close-contact:hover {
+                cursor: pointer;
+            }
+        }
+
+        @keyframes slide {
+            0% { width: 0vw; }
+            100% { width: 100vw; }
+        }
+    }
+
+    .contact-icon {
+        background: #fff;
+        border: 2px solid #000;
+        border-radius: 50px;
+        bottom: 30px;
+        display: grid;
+        height: 70px;
+        place-items: center;
+        position: absolute;
+        right: 30px;
+        // right: 10vw;
+        width: 70px;
+    }
+
+    .contact-icon:hover {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,70 @@
+@media screen and (max-width: 767px) {
+    .login {
+        display: grid;
+        height: 100vh;
+        place-items: center;
+        width: 100vw;
+
+        div {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            // height: 500px;
+            justify-content: center;
+            // width: 500px;
+
+            input {
+                border: none;
+                border-bottom: 1px solid #000;
+                font-size: 6vw;
+                font-family: $SecondaryFont;
+                height: 30px;
+                padding: 0 10px;
+                margin: 0 10px 20px 0;
+                outline: none;
+                width: 90vw;
+            }
+
+            h3 {
+                font-family: $SecondaryFont;
+                font-size: 7vw;
+                font-weight: normal;
+                margin-bottom: 20px;
+            }
+
+            // button {
+            //     background: #fff;
+            //     border: 2px solid black;
+            //     font-family: $SecondaryFont;
+            //     font-size: 30px;
+            //     font-weight: normal;
+            //     height: 60px;
+            //     outline: none;
+            //     width: 150px;
+            // }
+
+            button {
+                background: #fff;
+                border: 2px solid black;
+                font-family: $SecondaryFont;
+                // @include font-size(20px);
+                font-size: 6vw;
+                font-weight: normal;
+                // height: 40px;
+                margin-bottom: 30px;
+                padding: 1rem;
+                outline: none;
+                text-transform: uppercase;
+                width: 90vw;
+            }
+
+            p {
+                font-family: $SecondaryFont;
+                font-size: 6vw;
+                // padding-left: 10px;
+                margin-top: 10px;
+                text-align: center;
+            }
+        }
+    }
+}

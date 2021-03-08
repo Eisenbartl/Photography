@@ -1,0 +1,55 @@
+// @import '../variables/_mixins.scss';
+
+@media screen and (min-width: 1366px) {
+  .navigation {
+    align-items: center;
+    background: $ColorOne;
+    color: $ColorTwo;
+    display: flex;
+    font-family: sans-serif;
+    height: 150px;
+    justify-content: space-between;
+    padding: 0 10vw;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 3;
+
+    h3 {
+      font-family: $MainFont;
+      // font-size: 37px;
+      // font-size: calc(50% + 2.5vw);
+      //   @include font-size(3rem);
+    }
+
+    ul {
+      align-items: center;
+      display: flex;
+      list-style: none;
+
+      li {
+        color: #000;
+        font-family: $SecondaryFont;
+        // font-size: calc(20% + 2.5vw);
+        font-size: 1.5vw;
+        // @include responsive-font-size(1rem);
+        margin-right: 30px;
+        text-decoration: none;
+      }
+
+      button {
+        background: #fff;
+        border: 2px solid black;
+        font-family: $SecondaryFont;
+        // @include font-size(20px);
+        font-size: 1.5vw;
+        font-weight: normal;
+        // height: 60px;
+        outline: none;
+        padding: 1rem;
+        text-transform: uppercase;
+        // width: 150px;
+      }
+    }
+  }
+}

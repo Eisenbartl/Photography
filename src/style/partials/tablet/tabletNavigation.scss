@@ -1,0 +1,49 @@
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+    .navigation {
+        align-items: center;
+        background: $ColorOne;
+        color: $ColorTwo;
+        display: flex;
+        font-family: sans-serif;
+        height: 150px;
+        justify-content: space-between;
+        padding: 0 5vw;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        z-index: 3;
+
+        h3 { 
+            font-family: $MainFont;
+            font-size: 2.5rem;
+        }
+
+        ul{
+            align-items: center;
+            display: flex;
+            list-style: none;
+            
+            li {
+                color: #000;
+                font-family: $SecondaryFont;
+                font-size: 1.5vw;
+                margin-right: 20px;
+                text-decoration: none;
+            }
+
+            button {
+                background: #fff;
+                border: 2px solid black;
+                font-family: $SecondaryFont;
+                // @include font-size(20px);
+                font-size: 1.5vw;
+                font-weight: normal;
+                // height: 40px;
+                padding: 1rem;
+                outline: none;
+                text-transform: uppercase;
+                // width: 100px;
+            }
+        }
+    }
+}
