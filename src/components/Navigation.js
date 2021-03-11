@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 // import '../style/style.css';
 import { Link } from 'react-router-dom';
 
+import contactImg from '../img/mail-icon.png';
+
 
 const Navigation = props => {
   const navStyle = {
@@ -50,26 +52,28 @@ const Navigation = props => {
             {/* <h3>Turtle Boy</h3> */}
             <ul className='navigation-links'>
               <Link to='/' style={navStyle}>
-                {/* <li onClick={ () => props.closeContact()}>Home</li> */}
-                <li>Home</li>
+                <li onClick={ () => props.contactVis === true ? props.toggleContact() : null}>Home</li>
+                {/* <li>Home</li> */}
               </Link>
               <Link to='/portfolio' style={navStyle}>
-                {/* <li onClick={ () => props.closeContact()}>Portfolio</li> */}
-                <li>Portfolio</li>
+                <li onClick={ () => props.contactVis === true ? props.toggleContact() : null}>Portfolio</li>
+                {/* <li>Portfolio</li> */}
               </Link>
               <Link to='/about' style={navStyle}>
-                {/* <li onClick={ () => props.closeContact()}>About</li> */}
-                <li>About</li>
+                <li onClick={ () => props.contactVis === true ? props.toggleContact() : null}>About</li>
+                {/* <li>About</li> */}
               </Link>
               <Link to='/login' style={navStyle}>
-                {/* <li onClick={ () => props.closeContact()}>login</li> */}
-                <li>login</li>
+                <li onClick={ () => props.contactVis === true ? props.toggleContact() : null}>login</li>
+                {/* <li>login</li> */}
               </Link>
               <button 
                 className='contact-btn' 
-                // onClick={ () => props.menuClick() }
-                onClick={ () => props.clickContact() } 
-                >contact</button>
+                onClick={ () => props.toggleContact() }
+                
+                >
+                  <img src={ contactImg } alt=''/>
+                </button>
             </ul>
           </div>
         ) : null }

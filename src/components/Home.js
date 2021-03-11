@@ -1,4 +1,5 @@
 import React from 'react';
+import backImg from '../img/home-back.jpg';
 // import background from '../../../assets/img/seaside.jpg';
 
 const Home = () => {
@@ -6,20 +7,25 @@ const Home = () => {
 
   return (
     <div className='home'>
-      <div className='home-overlay'></div>
+      <img src={ backImg } className='home-bg-img' alt=''/>
+      {/* <div className='home-overlay'></div> */}
       <div className='home-header'>
         <h1 className='text-responsive'>Photography</h1>
 
         { width < 768 ? (
           <ul>
-            <li>VRBO</li>
             <li>Family</li>
-            <li>Wedding</li>
+            <li>Fine art</li>
+            <li>Weddings</li>
             <li>Real Estate</li>
-            <li>Fine Art Portraites</li>
           </ul>
         ) :
-          <p className='text-p'>Weddings, VRBO, real estate, family and fine art portraites.</p>
+          <ul>
+            <li className='family'>Family</li>
+            <li className='fine-art'>Fine art</li>
+            <li className='weddings'>Weddings</li>
+            <li className='real-estate'>Real Estate</li>
+          </ul>
          }
       </div>
     </div>

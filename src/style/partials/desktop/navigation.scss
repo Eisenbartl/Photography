@@ -3,7 +3,8 @@
 @media screen and (min-width: 1366px) {
   .navigation {
     align-items: center;
-    background: $ColorOne;
+    // background: $ColorOne;
+    background: transparent;
     color: $ColorTwo;
     display: flex;
     font-family: sans-serif;
@@ -16,8 +17,9 @@
     z-index: 3;
 
     h3 {
+      color: $ColorTwo;
       font-family: $MainFont;
-      // font-size: 37px;
+      font-size: 3em;
       // font-size: calc(50% + 2.5vw);
       //   @include font-size(3rem);
     }
@@ -31,24 +33,33 @@
         color: #000;
         font-family: $SecondaryFont;
         // font-size: calc(20% + 2.5vw);
-        font-size: 1.5vw;
+        // font-size: 1.5vw;
+        font-size: 1.2em;
         // @include responsive-font-size(1rem);
         margin-right: 30px;
         text-decoration: none;
       }
 
       button {
-        background: #fff;
-        border: 2px solid black;
+        background: $ColorFour;
+        border: none;
+        border-radius: 50%;
+        display: grid;
         font-family: $SecondaryFont;
         // @include font-size(20px);
         font-size: 1.5vw;
         font-weight: normal;
         // height: 60px;
+        height: 80px;
         outline: none;
         padding: 1rem;
+        place-items: center;
         text-transform: uppercase;
-        // width: 150px;
+        width: 80px;
+      }
+
+      button:hover {
+        cursor: pointer;
       }
     }
   }

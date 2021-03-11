@@ -49,7 +49,7 @@ const Portfolio = props => {
         <h3>family</h3>
         <div className='img-container family-img'>
           <img src={ FamOne }  className='famOne' alt=""/>
-          <img src={FamTwo }  className='famTwo' alt=""/>
+          <img src={ FamTwo }  className='famTwo' alt=""/>
           <img src={ FamThree }  className='famThree' alt=""/>
           <img src={ FamFour }  className='famFour' alt=""/>
           <img src={ FamFive }  className='famFive' alt=""/>

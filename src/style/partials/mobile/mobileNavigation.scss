@@ -1,43 +1,41 @@
 @media screen and (max-width: 767px) {
   .navigation {
     align-items: center;
-    background: $ColorOne;
+    background: transparent;
     // background: pink;
     color: $ColorTwo;
     display: flex;
     // flex-direction: row-reverse;
     font-family: sans-serif;
-    height: 100px;
+    height: 70px;
     justify-content: space-between;
     padding: 0 5vw;
     position: fixed;
     top: 0;
     width: 100vw;
     z-index: 3;
-    
-    h3 { 
-        font-family: $MainFont;
-        font-size: 2.5rem;
+
+    h3 {
+      font-family: $MainFont;
+      font-size: 2em;
     }
 
     .nav-menu-links {
+      .hamburgerMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 30px;
 
-    .hamburgerMenu {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 35px;
-      height: 35px;
-
-      .line {
-        background: black;
-        height: 6px;
-        width: 35px;
+        .line {
+          background: black;
+          height: 6px;
+          width: 35px;
+        }
       }
-    }
 
-
-    ul{
+      ul {
         // align-items: center;
         // display: flex;
         background: $ColorOne;
@@ -45,38 +43,38 @@
         list-style: none;
         position: absolute;
         text-align: center;
-        top: 100px;
+        top: 70px;
         width: 100vw;
         margin: auto;
-        
+
         li {
-            // border-bottom: 1px solid black;
-            border-top: 1px solid black;
-            color: #000;
-            font-family: $SecondaryFont;
-            font-size: 5vw;
-            padding-bottom: 20px;
-            padding-top: 20px;
-            text-decoration: none;
+          // border-bottom: 1px solid black;
+          border-top: 1px solid black;
+          color: #000;
+          font-family: $SecondaryFont;
+          font-size: 5vw;
+          padding-bottom: 20px;
+          padding-top: 20px;
+          text-decoration: none;
         }
 
         button {
-            background: #fff;
-            border: none;
-            border-bottom: 1px solid black;
-            border-top: 1px solid black;
-            font-family: $SecondaryFont;
-            // @include font-size(20px);
-            font-size: 5vw;
-            font-weight: normal;
-            // height: 40px;
-            padding-bottom: 20px;
-            padding-top: 20px;
-            outline: none;
-            text-transform: uppercase;
-            width: 100vw;
+          background: #fff;
+          border: none;
+          border-bottom: 1px solid black;
+          border-top: 1px solid black;
+          font-family: $SecondaryFont;
+          // @include font-size(20px);
+          font-size: 5vw;
+          font-weight: normal;
+          // height: 40px;
+          padding-bottom: 20px;
+          padding-top: 20px;
+          outline: none;
+          text-transform: uppercase;
+          width: 100vw;
         }
+      }
     }
   }
-}
 }

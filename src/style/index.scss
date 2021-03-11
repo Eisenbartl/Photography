@@ -13,15 +13,18 @@
 @import "./partials/desktop/home.scss";
 @import "./partials/desktop/about.scss";
 @import "./partials/desktop/portfolio.scss";
+@import "./partials/desktop/contact.scss";
 
 // tablet
 @import "./partials/tablet/tabletNavigation.scss";
 @import "./partials/tablet/tabletHome.scss";
 @import "./partials/tablet/tabletAbout.scss";
 @import "./partials/tablet/tabletPortfolio.scss";
+@import "./partials/tablet/tabletContact.scss";
 
 // mobile
 @import "./partials/mobile/mobileNavigation.scss";
 @import "./partials/mobile/mobileHome.scss";
 @import "./partials/mobile/mobileAbout.scss";
 @import "./partials/mobile/mobilePortfolio.scss";
+@import "./partials/mobile/mobileContact.scss";
